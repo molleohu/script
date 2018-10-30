@@ -40,5 +40,5 @@ PS1可以简化分为以下几个部分:<br>
   PS1d = \e[[0m		#Reset字符颜色
   PS1 => {PS1a}换行{PS1b}\u@\h ${PS1c}\w${PS1d}换行\$
 ```
-
+详细一点的分析请见[PS1.md](https://github.com/molleohu/script/blob/master/PS1.md)
 
