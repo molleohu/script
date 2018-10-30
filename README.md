@@ -42,3 +42,9 @@ PS1可以简化分为以下几个部分:<br>
 ```
 详细一点的分析请见[PS1.md](https://github.com/molleohu/script/blob/master/PS1.md)
 
+### 4. 统计进程个数<br>
+使用`ps ax | grep <process_name>`时会发现`grep <process_name>`也在输出列表中。这样通过wc -l统计的进程个数就会增加1.<br>
+解决方法：过滤输出列表中`grep <process_name>`这一行，使用`grep -v "grep"`.<br>
+```Bash
+ps ax | grep <process_name> | grep -v "grep" | wc -l
+```
