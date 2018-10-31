@@ -48,3 +48,14 @@ PS1可以简化分为以下几个部分:<br>
 ```Bash
 ps ax | grep <process_name> | grep -v "grep" | wc -l
 ```
+
+### 5. 脚本中生成多行文件
+这里说的方式为cat + EOF的方式。写法通常文件<br>
+```Bash
+cat << EOF > 1.txt
+11
+22
+33
+EOF
+```
+这种写法的分析，请见[CAT_EOF.md](https://github.com/molleohu/script/blob/master/CAT_EOF.md)<br>
